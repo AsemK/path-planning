@@ -1,0 +1,43 @@
+Planing and Repanning Algorithms in the a grid-based configuration Space
+A testing platform
+By Asem Khattab (asem.khattab@gmail.com)
+DLR, Braunschweig
+
+timeline:
+
+08/08/2017 Tuesday:   -building a "map builder" system that allows the user to design any
+                           grid based map and visualize the produced map.
+09/08/2017 Wednesday: -Implementing A* forward search and functions to plot the result.
+10/08/2017 Thursday:  -Improving the plotting functions to produce more informing plots.
+                      -Extending A* to allow multiple goals.
+                      -Building a complex map for experiments.
+11/08/2017 Friday:    -Adding replanning general functions to the system.
+                      -Adding animation capability to the system.
+                      -Adding a motion scenario to test replanning on paperGrid.
+                      -Implementing backwards A*.
+14/08/2017 Monday:    -Implementing and testing D* Lite.
+                      -Adding a motion scenario to test replanning on complexGrid.
+                      -Reviewing the complete code.
+15/08/2017 Tuesday:   -Implementing and testing backward ARA*.
+                      -Implementing and testing forward ARA*.
+                      -Extending the animation capabilities to support anytime planners.
+                      -Creating paper2grid.
+16/08/2017 Wednesday: -Implementing and testing AD*.
+17/08/2017 Thursday:  -Reviewing the whole code again.
+                      -Improving the graphing functionality and adding several options to it.
+                      -Commenting the code.
+18/08/2017 Friday:    -Creating the large grid.
+                      -Reviewing, dubuging and commenting the code.
+21/08/2017 Monday:    -Reviewing, dubuging and commenting the code.
+22/08/2017 Tuesday:   -Reviewing, dubuging and commenting the code.
+                           funny bugs found: concatenating list instead of updating (created duplicates).
+                                             because of percision, comparisons were not correct. rounding was used.
+                      -Creating time tests on the complex grid.
+23/08/2017 Wednesday: -Implementing tracePath function. (so that time tests are independent of path calaculation time)
+                      -Performing timing analysis and discovering the computationally expensive parts of the code.
+                           DStarLite and ADStar was unexpectedly found to consume more time than other algorithms.
+24/08/2017 Thursday:  -Implementing an optimized version of DStarLite and ADStar.
+                           now, the two are more efficient than the others.
+25/08/2017 Friday:    -Creating movement sscenario and time tests on the largeGrid.
+                      -Doing more time tests.
+                      -Starting writing the report.
